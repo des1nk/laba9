@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int k;
+    cout<<"¬ведите год :"<<endl;
+    cin>>k;
+    if (k > 1983) k = (k - 1984) % 60 + 1;
+    else k = 61 - (1984 - k) % 60;
+    switch (((k-1) % 10)/2+1) 
+    {
+        case 2: cout<<"красн"; break;
+        case 3: cout<<"желт"; break;
+        case 1: cout<<"зелен"; break;
+        case 4: cout<<"бел"; break;
+        case 5: cout<<"черн"; break;
+    }    
+    switch ((k - 1) % 12 + 1)
+    {
+        case 9: cout<<"а€ обезь€на"<<endl; break;
+        case 10: cout<<"а€ курица"<<endl; break;
+        case 11: cout<<"а€ собака"<<endl; break;
+        case 12: cout<<"а€ свинь€"<<endl; break;
+        case 8: cout<<"а€ овца"<<endl; break;
+        case 6: cout<<"а€ зме€"<<endl; break;
+        case 2: cout<<"а€ корова"<<endl; break;
+        case 4: cout<<"ый за€ц"<<endl; break;
+        case 5: cout<<"ый дракон"<<endl; break;
+        case 3: cout<<"ый тигр"<<endl; break;
+        case 1: cout<<"а€ крыса"<<endl; break;
+        case 7: cout<<"а€ лошадь"<<endl; break;
+    }  
+    return 0;
+}

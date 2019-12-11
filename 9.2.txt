@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    char a;
+    cout<<"Введите направление и команду"<<endl;
+    cin>>a>>n;
+    if (n==0){
+        if (a=='N') cout<<"Север"<<endl;
+        if (a=='S') cout<<"Юг"<<endl;
+        if (a=='W') cout<<"Запад"<<endl;
+        if (a=='E') cout<<"Восток"<<endl;
+    }
+    if (n==1){
+        if (a=='N') cout<<"Восток"<<endl;
+        if (a=='S') cout<<"Запад"<<endl;
+        if (a=='W') cout<<"Север"<<endl;
+        if (a=='E') cout<<"Юг"<<endl;
+    }
+    if (n==-1){
+        if (a=='N') cout<<"Запад"<<endl;
+        if (a=='S') cout<<"Восток"<<endl;
+        if (a=='W') cout<<"Юг"<<endl;
+        if (a=='E') cout<<"Север"<<endl;
+    }
+}
